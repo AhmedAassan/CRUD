@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body dir="rtl">
+
+
+    <div class="w-75 m-auto py-5">
+
+        <div class="form-label">
+            <label class="form-label" for="productName">الإسم :</label>
+            <input class="form-control" type="text" id="productName">
+        </div>
+
+        <div class="form-label">
+            <label class="form-label" for="productPrice">تاريخ البدئ :</label>
+            <input class="form-control" type="datetime-local" id="productPrice">
+        </div>
+
+        <div class="form-label">
+            <label class="form-label" for="productCategory">تاريخ الإنتهاء :</label>
+            <input class="form-control" type="date" id="productCategory">
+        </div>
+
+        <div class="form-label">
+            <label class="form-label" for="productDesc">دفع كم :</label>
+            <input class="form-control" type="number" id="productDesc">
+
+        </div>
+        <button onclick="addProduct();" class="btn btn-outline-info">إضافة</button>
+
+    </div>
+
+
+    <div class="w-75 m-auto py-3">
+
+        <input onkeyup="serechProduct()" placeholder="search ..." type="text" class="form-control w-75 m-auto" id="searchInput">
+
+
+        <table class="table my-5">
+            <thead>
+                <th>العدد</th>
+                <th>الإسم</th>
+                <th>تاريخ البدئ</th>
+                <th>تاريخ الإنتهاء</th>
+                <th>دفع كم</th>
+                <th>تعديل</th>
+                <th>حذف</th>
+
+            </thead>
+
+            <tbody id="tBody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
